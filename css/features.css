@@ -1,5 +1,5 @@
 .features{
-	height: 50rem;
+	height: 45rem;
 	width: 100%;
 	background: url('/images/bg2.png')no-repeat center center/cover;
 }
@@ -40,8 +40,8 @@
     margin-bottom: 1.5rem;
 }
 .features .card-con div p{
-	opacity: .8;
-	font-size: .9rem;
+	font-size: 1rem;
+    text-shadow: 3px 1px 0px  rgba(0, 0, 0, 0.5);
 }
 .features .card-con div span{
 	font-size: 1.7rem;
@@ -50,3 +50,9 @@
 	justify-content: center;
 }
 
+@media screen and (max-width:1000px){
+    .features .card-con div img{
+        height: 100px;
+        width: 100px;
+    }
+}
