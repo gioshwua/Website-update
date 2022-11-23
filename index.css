@@ -101,24 +101,13 @@
     top:2%;
     left:25%;
 	animation: app .8s linear alternate infinite;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 @keyframes app{
     0%{}
 	100%{
 		transform:translateY(15px);
-	}
-}
-
-@media screen and (max-width:700px){
-    .home{
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2, auto-fill);
-		grid-template-areas: 
-		"image"
-		"content";
-		height: 100%;
-		padding-bottom: 1rem;
 	}
 }
 
@@ -142,7 +131,6 @@
     }
     
 }
-
 @media screen and (max-width:800px){
     .main-div header {
         height: 50px;
@@ -165,6 +153,7 @@
     
 }
 
+
 @media screen and (max-width: 1000px){
 	.home{
 		grid-template-columns: 1fr;
@@ -182,12 +171,27 @@
 	}
 	.home .right{
 		grid-area: image;
+        margin: auto;
 	}
 	.home .right img{
-        max-height: 15rem;
-        max-width: 35rem;
+        max-height: 20rem;
+        max-width: 20rem;
 	}
-
+}
+@media screen and (max-width:800px){
+    .home{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, auto-fill);
+		grid-template-areas: 
+		"image"
+		"content";
+		height: 100%;
+		padding-bottom: 1rem;
+	}
+    .home .right img{
+        max-height: 15rem;
+        max-width: 15rem;
+	}
 }
 @media screen and (max-width: 800px){
 	.home{
