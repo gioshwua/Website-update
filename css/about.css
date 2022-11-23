@@ -1,0 +1,14 @@
+.about{
+	background: url("/appFeaturesBg.png")no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	padding: 0.5rem;
+}
+.main-container .about >h1{
+	text-align: center;
+	background: var(--gradient);
+	color: transparent;
+	-webkit-background-clip: text;
+	padding: 7rem 0;
+	font-size: 2.5rem;
+}
