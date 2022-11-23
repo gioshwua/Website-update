@@ -60,7 +60,7 @@
     grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	padding-top: 5.9rem;
-    background: url('bg1-new.png')no-repeat center center/cover;
+    background: url('/images/bg1-new.png')no-repeat center center/cover;
 }
 .home .left{
     display: flex;
@@ -95,8 +95,8 @@
 	border-radius: 2rem;
 }
 .home .right img{
-	max-height: 40rem;
-	max-width: 40rem;
+	max-height: 35rem;
+	max-width: 35rem;
     position: relative;
     top:2%;
     left:25%;
