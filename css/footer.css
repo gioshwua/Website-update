@@ -1,0 +1,131 @@
+.footer{
+	height: 100%;
+	width: 100%;
+	background-color: var(--navy);
+	padding: 4rem 0rem 6rem 0rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 1rem;
+	position: relative;
+}
+.footer .foot1{
+	margin: 0 auto;
+}
+.footer .foot1 h1{
+	margin-bottom: 3rem;
+	color: var(--winter);
+	border-bottom: 3px solid #0C2D48;
+	text-align: center;
+}
+.footer .foot1 p{
+	max-width: 350px;
+	color: #0C2D48;
+	font-size: 1.1rem;
+	opacity: .9;
+}
+.footer .foot2{
+	display: flex;
+	flex-direction: column;
+}
+.footer .foot2 h1{
+	border-bottom: 3px solid #0C2D48;
+	color: #0C2D48;
+	margin: 0 auto;
+}
+.footer .foot2 a{
+	text-decoration: none;
+	color: #0C2D48;
+	font-size: 1.1rem;
+	font-weight: 300;
+	max-width: 3rem;
+	transition: .4s ease;
+	margin: 1rem auto;
+}
+.footer .foot2 a:hover{
+	border-bottom: 1px solid #0C2D48;
+
+}
+.footer .foot3{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.footer .foot3 h1{
+	border-bottom: 3px solid #0C2D48;
+	margin: .4rem auto;
+	color: #0C2D48;
+}
+.footer .foot3 a{
+	text-decoration: none;
+	color: #0C2D48;
+	font-size: 1.1rem;
+	font-weight: 300;
+	max-width: 3rem;
+	transition: .4s ease;
+	margin: 1rem auto;
+}
+.footer .foot3 a{
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: #0C2D48;
+	font-size: 1.1rem;
+	text-align: left;
+}
+.footer .foot4{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.footer .foot4 h1{
+	border-bottom: 3px solid #0C2D48;
+	margin: .4rem auto;
+	color: #0C2D48;
+}
+.footer .foot4 a{
+	text-decoration: none;
+	color: #0C2D48;
+	font-size: 1.1rem;
+	font-weight: 300;
+	transition: .4s ease;
+	margin: 1rem auto;
+}
+.footer .foot4 a{
+	margin-bottom: 1.1rem;
+	text-decoration: none;
+	color: #0C2D48;
+}
+.footer .foot4 a >i{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+}
+
+.footer .hr{
+	height: 1px;
+	width: 100%;
+	background: #0C2D48;
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	opacity: .3;
+}
+
+@media screen and (max-width: 1500px){
+		.footer{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+	}
+		.footer .hr{
+		bottom: 10%;
+	}
+}
+@media screen and (max-width: 800px){
+		.footer{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+
+	}
+	.footer .hr{
+		bottom: 5%;
+	}
+}

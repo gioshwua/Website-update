@@ -1,0 +1,102 @@
+.dev{
+	height: 100%;
+	width: 100%;
+	background: var(--transparent);
+}
+.dev >h1{
+	text-align: center;
+	padding: 7rem 0 4rem 0;
+	background: var(--gradient);
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 40px;
+}
+.dev .user-con{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1.5rem;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+.dev .user-con div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0.5rem 1rem rgb(0,0,0,15%);
+	padding: 4rem 1rem;
+	position: relative;
+}
+.dev .user-con div img{
+	height: 100%;
+	width: 100%;
+	max-width: 8rem;
+	max-height: 8rem;
+	border-radius: 5rem;
+	margin-bottom: 1rem;
+}
+.dev .user-con div h1{
+	margin-bottom: 1rem;
+}
+.dev .user-con div h1{
+	color: var(--navy);
+	font-size: 1.5rem;
+	text-align: center;
+}
+.dev .user-con div p{
+	font-size: 1.5rem;
+	opacity: .8;
+	max-width: 450px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1150px){
+		.dev .user-con{
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-areas: 
+		"card1"
+		"card2"
+		"card3"
+		"card4"
+		"card5"
+		"card6";
+		column-gap: 0;
+		grid-row-gap: 1.5rem;
+		max-width: 1350px;
+		margin: 0 auto;
+	}
+	.dev .user-con .card1{
+		grid-area: card1;
+	}
+	.dev .user-con .card2{
+		grid-area: card2;
+	}
+	.dev .user-con .card3{
+		grid-area: card3;
+	}
+	.dev .user-con .card4{
+		grid-area: card4;
+	}
+	.dev .user-con .card5{
+		grid-area: card5;
+	}
+	.dev .user-con .card6{
+		grid-area: card6;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+		.dev .user-con div >i{
+		font-size: 3rem;
+		top: 1%;
+		right: 5%;
+
+
+	}
+}
