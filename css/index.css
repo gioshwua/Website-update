@@ -1,5 +1,6 @@
 @import "features.css";
 @import "about.css";
+@import "developers.css";
 :root{
     --navy: #06283D;
     --blue: #256D85;
@@ -107,6 +108,7 @@ html{
     left:25%;
 	animation: app .8s linear alternate infinite;
     box-shadow: 5px 10px 18px #888888;
+    border-radius: 2rem;
 }
 
 @keyframes app{

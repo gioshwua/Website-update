@@ -1,5 +1,5 @@
 .about{
-	/* background: url("/appFeaturesBg.png")no-repeat center center/cover; */
+	background: url("/images/about-bg1.png")no-repeat center center/cover; 
 	height: 100%;
 	width: 100%;
 }
@@ -8,7 +8,8 @@
 	background: var(--gradient);
 	color: transparent;
 	-webkit-background-clip: text;
-	padding: 7rem 0;
+	padding-top: 7rem;
+	padding-bottom: 2rem;
 	font-size: 2.5rem;
 }
 .about .content-head{
@@ -16,7 +17,7 @@
 	margin: auto;
 }
 .about .about-img-con{
-	margin: auto; /* dito ang imgae*/
+	margin: auto; 
 	width: 550px;
 	height: 550px;
 }
@@ -24,7 +25,9 @@
 	max-height: 550px;
 	max-width: 550px;
 	height: 100%;
-	width: 100%;
+	width: 50%;
+	position: relative;
+	left:25%;
 }
 .about .content-head{
 	display: grid;
@@ -32,13 +35,13 @@
 	place-items: center;
 }
 .about .content-head h1{
-	opacity: .7;
 	margin-bottom: 1.5rem;
 }
 .about .content-head p{
-	opacity: .8;
 	font-size: 1.1rem;
 	margin-bottom: 2.5rem;
+	text-align: justify;
+
 }
 .about .content-head .about-content span a{
 	background: var(--gradient);
@@ -50,11 +53,7 @@
 	transition: .3s ease;
 }
 .about .content-head .about-content span a:hover{
-	background: var(--dblue);
-}
-.about .content-head .about-content span a i{
-	margin-right: 4px;
-	font-size: 1.1rem;
+	background: var(--blue);
 }
 .about .content-head .about-content span a:nth-child(1){
 	margin-right: 2rem;
@@ -85,12 +84,15 @@
 
 @media screen and (max-width: 800px){
 	.about{
-		background: url("../images/about-bg.png")no-repeat center left/cover;
+		background: url("/images/about-bg1.png")no-repeat center left/cover;
 		height: 100%;
 		width: 100%;
 	}
 	.about .content-head{
 		grid-auto-flow: row;
+	}
+	.about .about-content{
+		background-color: white;
 	}
 	.about .content-head p{
 		font-size: 1.3rem;
