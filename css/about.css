@@ -1,14 +1,104 @@
 .about{
-	background: url("/appFeaturesBg.png")no-repeat center center/cover;
+	/* background: url("/appFeaturesBg.png")no-repeat center center/cover; */
 	height: 100%;
 	width: 100%;
-	padding: 0.5rem;
 }
-.main-container .about >h1{
+.about >h1{
 	text-align: center;
 	background: var(--gradient);
 	color: transparent;
 	-webkit-background-clip: text;
 	padding: 7rem 0;
 	font-size: 2.5rem;
+}
+.about .content-head{
+	max-width: 1270px;
+	margin: auto;
+}
+.about .about-img-con{
+	margin: auto; /* dito ang imgae*/
+	width: 550px;
+	height: 550px;
+}
+.about .about-img-con img{
+	max-height: 550px;
+	max-width: 550px;
+	height: 100%;
+	width: 100%;
+}
+.about .content-head{
+	display: grid;
+	grid-auto-flow: column;
+	place-items: center;
+}
+.about .content-head h1{
+	opacity: .7;
+	margin-bottom: 1.5rem;
+}
+.about .content-head p{
+	opacity: .8;
+	font-size: 1.1rem;
+	margin-bottom: 2.5rem;
+}
+.about .content-head .about-content span a{
+	background: var(--gradient);
+	padding: .9rem 2.5rem;
+	border-radius: 2rem;
+	text-decoration: none;
+	color: #fffffe;
+	font-size: 1.2rem;
+	transition: .3s ease;
+}
+.about .content-head .about-content span a:hover{
+	background: var(--dblue);
+}
+.about .content-head .about-content span a i{
+	margin-right: 4px;
+	font-size: 1.1rem;
+}
+.about .content-head .about-content span a:nth-child(1){
+	margin-right: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+	.about .content-head .about-content span{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.about .content-head .about-content span a{
+		max-width: 50%;
+		margin: 1rem 0;
+		text-align: center;
+	}
+	.about .content-head .about-content span a:nth-child(1){
+		margin-right: 0;
+	}
+
+}
+@media screen and (max-width: 700px){
+	.about .content-head .about-content span a{
+		max-width: 80%;
+		margin: 1rem 0;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.about{
+		background: url("../images/about-bg.png")no-repeat center left/cover;
+		height: 100%;
+		width: 100%;
+	}
+	.about .content-head{
+		grid-auto-flow: row;
+	}
+	.about .content-head p{
+		font-size: 1.3rem;
+	}
+}
+@media screen and (max-width: 500px){
+	.about .content-head .about-content span a{
+		max-width: 100%;
+		margin: 1rem 0;
+	}
 }
