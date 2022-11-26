@@ -68,7 +68,7 @@ html{
     grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	padding-top: 5.9rem;
-    background: url('/images/bg1-new.png')no-repeat center center/cover;
+    background: url('images/bg1-new.png')no-repeat center center/cover;
 }
 .home .left{
     display: flex;
