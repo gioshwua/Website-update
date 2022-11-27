@@ -29,7 +29,7 @@
 .contact .contact-sub-con .main-form-con .form h1 {
   background: var(--gradient);
   color: transparent;
-  -webkit-background-clip: text;
+
   margin-bottom: 1.5rem;
   font-size: 2.7rem;
 }
