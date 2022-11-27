@@ -1,59 +1,59 @@
-.features{
-	padding-top: 3rem;
-	height: 45rem;
-	width: 100%;
-	background: url('images/bg2.png')no-repeat center center/cover;
+.features {
+  padding-top: 3rem;
+  height: 45rem;
+  width: 100%;
+  background: url("../images/bg2.png") no-repeat center center/cover;
 }
-.features h1{
-	text-align: center;
-	padding: 5rem 0;
-	font-size: 2.5rem;
-	color: var(--winter);
-    text-shadow: 10px 5px 20px rgb(197, 197, 197);
+.features h1 {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 2.5rem;
+  color: var(--winter);
+  text-shadow: 10px 5px 20px rgb(197, 197, 197);
 }
-.features .card-con{
-	display: grid;
-	margin: auto;
-	grid-auto-flow: column;
-	max-width: 1400px;
-	column-gap: 2rem;
+.features .card-con {
+  display: grid;
+  margin: auto;
+  grid-auto-flow: column;
+  max-width: 1400px;
+  column-gap: 2rem;
 }
-.features .card-con div{
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.5);
-	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    text-align:justify;
-	height: 25rem;
-	width: 80%;
-	max-width: 25rem;
-	padding: 1rem;
-    color:var(--winter);
+.features .card-con div {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 25rem;
+  width: 80%;
+  max-width: 25rem;
+  padding: 1rem;
+  color: var(--winter);
 }
-.features .card-con div img{
-	width: 100%;
-	height: 100%;
-	max-height: 150px;
-	max-width: 170px;
-    border-radius: 5rem;
-    margin-bottom: 1.5rem;
+.features .card-con div img {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  max-width: 170px;
+  border-radius: 5rem;
+  margin-bottom: 1.5rem;
 }
-.features .card-con div p{
-	font-size: 1rem;
-    text-shadow: 3px 1px 0px  rgba(0, 0, 0, 0.5);
+.features .card-con div p {
+  font-size: 1rem;
+  text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.5);
 }
-.features .card-con div span{
-	font-size: 1.7rem;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
+.features .card-con div span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width:1000px){
-    .features .card-con div img{
-        height: 100px;
-        width: 100px;
-    }
+@media screen and (max-width: 1000px) {
+  .features .card-con div img {
+    height: 100px;
+    width: 100px;
+  }
 }
